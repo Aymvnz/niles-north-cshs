@@ -181,11 +181,24 @@
       text-decoration:underline;
     }
 
+    @media (max-width:820px){
+      .leadership-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+      .email-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+    }
     @media (max-width:680px){
+      .page-header { padding-top:3.5rem; }
       .topbar {
         flex-direction:column;
         align-items:flex-start;
       }
+      .brand { align-items:flex-start; }
+      .brand span:last-child { max-width:22ch; }
+      .contact-section { padding-top:2.5rem; }
+      .hero h1 { font-size:clamp(2rem, 11vw, 3rem); }
+      .hero p { font-size:0.95rem; }
+      .leadership-grid, .email-grid { grid-template-columns:1fr; }
+      .leader-card, .email-card { padding:1rem; }
+      .email-card { min-height:105px; }
     }
   </style>
 </head>
@@ -222,7 +235,8 @@
         </div>
         <div class="leader-card">
           <div class="role">Secretary</div>
-          <div class="name">Open</div>
+          <div class="name">Naomi Brown</div>
+          <a href="mailto:naobro1@nilesk12.org" style="display:block; margin-top:0.6rem; color:var(--purple-soft); font-family:var(--mono); font-size:0.78rem; text-decoration:none;">naobro1@nilesk12.org</a>
         </div>
         <div class="leader-card">
           <div class="role">Faculty Advisor</div>
@@ -273,15 +287,11 @@
           <a href="mailto:muhmun1@nilesk12.org">muhmun1@nilesk12.org</a>
         </div>
         <div class="email-card">
-          <div class="name">Naomi<br>Brown</div>
-          <a href="mailto:naobro1@nilesk12.org">naobro1@nilesk12.org</a>
-        </div>
-        <div class="email-card">
           <div class="name">Sam<br>Bovee</div>
           <a href="mailto:sambov1@nilesk12.org">sambov1@nilesk12.org</a>
         </div>
         <div class="email-card">
-          <div class="name">Timmy<br>Ngague</div>
+          <div class="name">Timmy<br>Nague</div>
           <a href="mailto:timmynague@gmail.com">timmynague@gmail.com</a>
         </div>
       </div>
